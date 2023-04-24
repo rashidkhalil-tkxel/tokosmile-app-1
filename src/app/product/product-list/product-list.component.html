@@ -1,1 +1,347 @@
-<p>product-list works!</p>
+  <!-- bottom Navigation -->
+  <div class="bottom_nav_container">
+    <nav class="bottom_navbar">
+      <a class="nav-item" [routerLink]="['/home']" [routerLinkActive]="['is-active']">
+        <i class="fa-solid fa-house"></i><span>Home</span>
+      </a>
+
+      <a class="nav-item" href="javascript:void(0)">
+        <i class="fa-solid fa-ticket"></i><span>Voucher</span>
+      </a>
+
+      <a class="nav-item" href="javascript:void(0)">
+        <i class="fa-solid fa-lock"></i><span>Wallet</span>
+      </a>
+
+      <a class="nav-item" href="javascript:void(0)">
+        <i class="fa-solid fa-gear"></i><span>Settings</span>
+      </a>
+    </nav>
+  </div>
+
+
+  <div class="container-fluid responsive__ai single__product__container header__page">
+    <div class="header__top">
+      <!-- Navbar Start -->
+      <nav class="container xl:container-xxl navbar navbar-expand-xl navbar-light d-none py-3">
+        <div class="form-group has-search">
+          <span class="fa fa-search form-control-feedback"></span>
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav__seller" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <!-- <li class="nav-item">
+              <a class="nav-link active-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Voucher</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Wallet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Setting</a>
+            </li> -->
+            <li class="nav-item">
+              <a type="button" class="nav-link">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="icon-button__badge">2</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a type="button" class="nav-link">
+                <i class="fa-solid fa-message"></i>
+                <span class="icon-button__badge">2</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navbar END -->
+      <header class="container header d-xl-none">
+        <div class="form-group has-search">
+          <span class="fa fa-search form-control-feedback"></span>
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a type="button" class="nav-link">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="icon-button__badge">2</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a type="button" class="nav-link">
+              <i class="fa-solid fa-message"></i>
+              <span class="icon-button__badge">2</span>
+            </a>
+          </li>
+        </ul>
+        <!-- </nav> -->
+      </header>
+    </div>
+  </div>
+
+  <!-- Main Section -->
+  <section data-aos="zoom-out-up">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class=" carousel-inner">
+        <div class="carousel-item active">
+          <div class="slider_1 sliderOverlay">
+            <div class="slider_content relative container">
+              <span>#FASHION DAY</span>
+              <h1>80% OFF</h1>
+              <p>Discover Fashion that suits to <br> your style</p>
+              <a href="#">
+                Check this out
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <div class="slider_2 sliderOverlay">
+            <div class="slider_content relative container">
+              <span>#FASHION DAY</span>
+              <h1>80% OFF</h1>
+              <p>Discover Fashion that suits to <br> your style</p>
+              <a href="#">
+                Check this out
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <div class="slider_3 sliderOverlay">
+            <div class="slider_content relative container">
+              <span>#FASHION DAY</span>
+              <h1>80% OFF</h1>
+              <p>Discover Fashion that suits to <br> your style</p>
+              <a href="#">
+                Check this out
+              </a>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+  <!-- Main Section -->
+
+  <div class="container" data-aos="fade-down">
+    <div class="center">
+      <div class="icon-container">
+        <div class="icon-box">
+          <img src="assets/img/Capture1.PNG" alt="">
+        </div>
+        <p>Category</p>
+      </div>
+      <div class="icon-container">
+        <div class="icon-box">
+          <img src="assets/img/Capture2.PNG" alt="">
+        </div>
+        <p>Flight</p>
+      </div>
+      <div class="icon-container">
+        <div class="icon-box">
+          <img src="assets/img/Capture3.PNG" alt="">
+        </div>
+        <p>Bill</p>
+      </div>
+      <div class="icon-container">
+        <div class="icon-box">
+          <img src="assets/img/Capture4.PNG" alt="">
+        </div>
+        <p>Data plan</p>
+      </div>
+      <div class="icon-container">
+        <div class="icon-box">
+          <img src="assets/img/Capture5.PNG" alt="">
+        </div>
+        <p>Top Up</p>
+      </div>
+      <div class="icon-container">
+        <div class="icon-box">
+          <img src="assets/img/Capture3.PNG" alt="">
+        </div>
+        <p>Bill</p>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center bestProduct hproducts">
+        <h1>Best Sale Product</h1>
+        <a href="#">
+          See more
+        </a>
+      </div>
+      <div class="productCards">
+        <div class="card" style="width: 18rem;" data-aos="fade-down">
+          <i class="fa-regular fa-heart"></i>
+          <a [routerLink]="['detail', 1]">
+            <!-- <div class="imgHolder">
+            </div> -->
+            <div class="img-h">
+              <img src="assets/img/slide1.png" class="d-block w-100 image-cl" alt="...">
+            </div>
+            <div class="card-body">
+              <span class="card-title">Shirt</span>
+              <p class="card-text">Essentials's Men's Short-Sleeve Crewneck T-Shirt</p>
+              <div class="d-flex justify-content-between align-items-center cardFooter">
+                <div class="d-flex justify-content-start align-items-center mr-1 cardReviews">
+                  <i class="fa-solid fa-star"></i>
+                  4.9
+                  |
+                  2356
+                </div>
+                <span>
+                  $12.00
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="card" style="width: 18rem;" data-aos="fade-down">
+          <i class="fa-regular fa-heart"></i>
+          <a [routerLink]="['detail', 1]">
+            <!-- <div class="imgHolder">
+            </div> -->
+            <div class="img-h">
+              <img src="assets/img/silde2.jpg" class="d-block w-100 image-cl" alt="...">
+            </div>
+            <div class="card-body">
+              <span class="card-title">Shirt</span>
+              <p class="card-text">Essentials's Men's Short-Sleeve Crewneck T-Shirt</p>
+              <div class="d-flex justify-content-between align-items-center cardFooter">
+                <div class="d-flex justify-content-start align-items-center mr-1 cardReviews">
+                  <i class="fa-solid fa-star"></i>
+                  4.9
+                  |
+                  2356
+                </div>
+                <span>
+                  $12.00
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        
+        <div class="card" style="width: 18rem;" data-aos="fade-down">
+          <i class="fa-regular fa-heart"></i>
+          <a [routerLink]="['detail', 1]">
+            <!-- <div class="imgHolder">
+            </div> -->
+            <div class="img-h">
+              <img src="assets/img/card-1.jpg" class="d-block w-100 image-cl" alt="...">
+            </div>
+            <div class="card-body">
+              <span class="card-title">Shirt</span>
+              <p class="card-text">Essentials's Men's Short-Sleeve Crewneck T-Shirt</p>
+              <div class="d-flex justify-content-between align-items-center cardFooter">
+                <div class="d-flex justify-content-start align-items-center mr-1 cardReviews">
+                  <i class="fa-solid fa-star"></i>
+                  4.9
+                  |
+                  2356
+                </div>
+                <span>
+                  $12.00
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card" style="width: 18rem;" data-aos="fade-down">
+          <i class="fa-regular fa-heart"></i>
+          <a [routerLink]="['detail', 2]">
+            <!-- <div class="imgHolder1">
+            </div> -->
+            <div class="">
+              <img src="assets/img/card-2.jpg" class="d-block w-100 image-cl" alt="...">
+            </div>
+            <div class="card-body">
+              <span class="card-title">Shirt</span>
+              <p class="card-text">Essentials's Men's Short-Sleeve Crewneck T-Shirt</p>
+              <div class="d-flex justify-content-between align-items-center cardFooter">
+                <div class="d-flex justify-content-start align-items-center mr-1 cardReviews">
+                  <i class="fa-solid fa-star"></i>
+                  4.9
+                  |
+                  2356
+                </div>
+                <span>
+                  $12.00
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card" style="width: 18rem;" data-aos="fade-down">
+          <i class="fa-regular fa-heart"></i>
+          <a [routerLink]="['detail', 3]">
+            <!-- <div class="imgHolder">
+            </div> -->
+            <div class="">
+              <img src="assets/img/card-1.jpg" class="d-block w-100 image-cl" alt="...">
+            </div>
+            <div class="card-body">
+              <span class="card-title">Shirt</span>
+              <p class="card-text">Essentials's Men's Short-Sleeve Crewneck T-Shirt</p>
+              <div class="d-flex justify-content-between align-items-center cardFooter">
+                <div class="d-flex justify-content-start align-items-center mr-1 cardReviews">
+                  <i class="fa-solid fa-star"></i>
+                  4.9
+                  |
+                  2356
+                </div>
+                <span>
+                  $12.00
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card" style="width: 18rem;" data-aos="fade-down">
+          <i class="fa-regular fa-heart"></i>
+          <a [routerLink]="['detail', 4]">
+            <!-- <div class="imgHolder1">
+            </div> -->
+            <div class="">
+              <img src="assets/img/card-2.jpg" class="d-block w-100 image-cl" alt="...">
+            </div>
+            <div class="card-body">
+              <span class="card-title">Shirt</span>
+              <p class="card-text">Essentials's Men's Short-Sleeve Crewneck T-Shirt</p>
+              <div class="d-flex justify-content-between align-items-center cardFooter">
+                <div class="d-flex justify-content-start align-items-center mr-1 cardReviews">
+                  <i class="fa-solid fa-star"></i>
+                  4.9
+                  |
+                  2356
+                </div>
+                <span>
+                  $12.00
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>

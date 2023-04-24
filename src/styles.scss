@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons";
+// --save  --legacy-peer-deps 
+
+.slick-dots li button:before {
+    height: 6px;
+}
+.slick-dots .slick-active button:before {
+    width: 30px;
+    height: 6px;
+}
+.slick-dots li button:before {
+    height: 6px !important;
+}
+.hproducts {
+    display: flex;
+    // padding: 2rem 2.2rem;
+    padding: 1rem;
+    justify-content: space-between;
+    position: sticky;
+    top: 4.4rem;
+    z-index: 1;
+    background-color: #f4f5f8;
+
+//     &__heading {
+//       font-size: 1.3rem;
+//       font-weight: bold;
+//       color: #161828;
+//   }
+
+//   &__subheading {
+//     font-weight: 500;
+//     font-size: 1.2rem;
+//     color: #4db39a;
+// }
+}
