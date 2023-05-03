@@ -87,11 +87,12 @@
   </div>
 
   <!-- Main Section -->
-  <section data-aos="zoom-out-up">
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <!-- data-aos="zoom-out-up" -->
+  <section >
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
       
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
@@ -188,15 +189,15 @@
           See more
         </a>
       </div>
-      <div class="productCards">
+      <div class="productCards" style="padding-right: 0.6px;">
 
         
 
         <div class="card" style="width: 18rem;" data-aos="fade-down">
           <i class="fa-regular fa-heart"></i>
           <a [routerLink]="['detail', 1]"> 
-            <div class="img-h">
-              <img src="assets/img/slide1.png" class="d-block w-100 image-cl" alt="...">
+            <div class="imgHolder" [style.background-image]="'url(assets/img/slide1.png)'">
+              <!-- <img src="assets/img/slide1.png" class="d-block w-100 image-cl" alt="..."> -->
             </div>
             <div class="card-body">
               <span class="card-title">Shirt</span>
@@ -221,8 +222,8 @@
           <a [routerLink]="['detail', 1]">
             <!-- <div class="imgHolder">
             </div> -->
-            <div class="img-h">
-              <img src="assets/img/silde2.jpg" class="d-block w-100 image-cl" alt="...">
+            <div class="imgHolder"  [style.background-image]="'url(assets/img/silde2.jpg)'">
+              <!-- <img src="assets/img/silde2.jpg" class="d-block w-100 image-cl" alt="..."> -->
             </div>
             <div class="card-body">
               <span class="card-title">Shirt</span>
@@ -245,8 +246,8 @@
         <div class="card" style="width: 18rem;" data-aos="fade-down">
           <i class="fa-regular fa-heart"></i>
           <a [routerLink]="['detail', 1]"> 
-            <div class="img-h">
-              <img src="assets/img/shirt1.jpg" class="d-block w-100 image-cl" alt="...">
+            <div class="imgHolder"  [style.background-image]="'url(assets/img/shirt1.jpg)'">
+              <!-- <img src="assets/img/shirt1.jpg" class="d-block w-100 image-cl" alt="..."> -->
             </div>
             <div class="card-body">
               <span class="card-title">Shirt</span>
@@ -269,8 +270,8 @@
         <div class="card" style="width: 18rem;" data-aos="fade-down">
           <i class="fa-regular fa-heart"></i>
           <a [routerLink]="['detail', 1]"> 
-            <div class="img-h">
-              <img src="assets/img/shirt2.jpg" class="d-block w-100 image-cl" alt="...">
+            <div class="imgHolder"  [style.background-image]="'url(assets/img/shirt2.jpg)'">
+              <!-- <img src="assets/img/shirt2.jpg" class="d-block w-100 image-cl" alt="..."> -->
             </div>
             <div class="card-body">
               <span class="card-title">Shirt</span>
@@ -294,8 +295,8 @@
         <div class="card" style="width: 18rem;" data-aos="fade-down">
           <i class="fa-regular fa-heart"></i>
           <a [routerLink]="['detail', 1]"> 
-            <div class="img-h">
-              <img src="assets/img/shirt3.jpg" class="d-block w-100 image-cl" alt="...">
+            <div class="imgHolder"  [style.background-image]="'url(assets/img/shirt3.jpg)'">
+              <!-- <img src="assets/img/shirt3.jpg" class="d-block w-100 image-cl" alt="..."> -->
             </div>
             <div class="card-body">
               <span class="card-title">Shirt</span>
@@ -318,8 +319,8 @@
         <div class="card" style="width: 18rem;" data-aos="fade-down">
           <i class="fa-regular fa-heart"></i>
           <a [routerLink]="['detail', 1]"> 
-            <div class="img-h">
-              <img src="assets/img/shirt4.jpg" class="d-block w-100 image-cl" alt="...">
+            <div class="imgHolder" [style.background-image]="'url(assets/img/shirt4.jpg)'">
+              <!-- <img src="assets/img/shirt4.jpg" class="d-block w-100 image-cl" alt="..."> -->
             </div>
             <div class="card-body">
               <span class="card-title">Shirt</span>
@@ -345,8 +346,8 @@
           <a [routerLink]="['detail', 1]">
             <!-- <div class="imgHolder">
             </div> -->
-            <div class="img-h">
-              <img src="assets/img/card-1.jpg" class="d-block w-100 image-cl" alt="...">
+            <div class="imgHolder" [style.background-image]="'url(assets/img/card-1.jpg)'">
+              <!-- <img src="assets/img/card-1.jpg" class="d-block w-100 image-cl" alt="..."> -->
             </div>
             <div class="card-body">
               <span class="card-title">Shirt</span>
@@ -370,8 +371,8 @@
           <a [routerLink]="['detail', 2]">
             <!-- <div class="imgHolder1">
             </div> -->
-            <div class="">
-              <img src="assets/img/card-2.jpg" class="d-block w-100 image-cl" alt="...">
+            <div class="imgHolder" [style.background-image]="'url(assets/img/card-2.jpg)'">
+              <!-- <img src="assets/img/card-2.jpg" class="d-block w-100 image-cl" alt="..."> -->
             </div>
             <div class="card-body">
               <span class="card-title">Shirt</span>
@@ -395,8 +396,8 @@
           <a [routerLink]="['detail', 3]">
             <!-- <div class="imgHolder">
             </div> -->
-            <div class="">
-              <img src="assets/img/card-1.jpg" class="d-block w-100 image-cl" alt="...">
+            <div class="imgHolder" [style.background-image]="'url(assets/img/card-1.jpg)'">
+              <!-- <img src="assets/img/card-1.jpg" class="d-block w-100 image-cl" alt="..."> -->
             </div>
             <div class="card-body">
               <span class="card-title">Shirt</span>
@@ -420,8 +421,8 @@
           <a [routerLink]="['detail', 4]">
             <!-- <div class="imgHolder1">
             </div> -->
-            <div class="">
-              <img src="assets/img/card-2.jpg" class="d-block w-100 image-cl" alt="...">
+            <div class="imgHolder" [style.background-image]="'url(assets/img/card-2.jpg)'">
+              <!-- <img src="assets/img/card-2.jpg" class="d-block w-100 image-cl" alt="..."> -->
             </div>
             <div class="card-body">
               <span class="card-title">Shirt</span>

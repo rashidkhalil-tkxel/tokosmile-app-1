@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "3c54825c-c0cb-491c-8c4a-dc32e307cbb0"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -31,22 +34,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.css",
-              "src/assets/Css/style.css",
-              "src/assets//Css/responsive.css",
-              "src/assets/font-family/style.css",
-              "node_modules/slick-carousel/slick/slick.scss",
-              "node_modules/slick-carousel/slick/slick-theme.scss",
-              "node_modules/aos/dist/aos.css",
-              "node_modules/font-awesome/css/font-awesome.css" 
+              "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.js",
-              "node_modules/aos/dist/aos.js",
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/slick-carousel/slick/slick.min.js",
-              "src/assets/Js/script.js"
             ]
           },
           "configurations": {

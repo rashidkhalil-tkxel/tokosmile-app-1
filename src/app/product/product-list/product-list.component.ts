@@ -8,10 +8,28 @@ import * as AOS from 'aos';
 })
 export class ProductListComponent implements OnInit {
 
-  constructor() { }
+  version:string = '';
+  constructor() {
+   this.version = localStorage.getItem("version") as string;
+    AOS.init({
+      once: true,
+    });
+    $(function(){
+      $('.carousel').carousel({ interval: 2000,   autoplay: false,  pause: "hover"});
+      $('.carousel').carousel(0);
+      // $('.carousel').carousel('pause'); 
+  }); 
+   }
 
   ngOnInit() {
-    AOS.init();//AOS - 2
+    console.log("test")
+    setTimeout(() => {
+      window.dispatchEvent(new Event('resize'));
+    }, 50);
+  
+    AOS.init({
+      once: true,
+    });
     AOS.refresh();//refresh method is called on window resize and so on, as it doesn't require to build new store with AOS elements and should be as light as possible.
   
     $('.center').slick({
@@ -21,7 +39,8 @@ export class ProductListComponent implements OnInit {
       slidesToShow: 4,
       arrows: false,
       autoplay: false,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 1000, 
+    // mobileFirst:true,//add this one
       responsive: [
         {
           breakpoint: 1024,
@@ -33,12 +52,14 @@ export class ProductListComponent implements OnInit {
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3
+            slidesToShow: 4,
+            slidesToScroll: 4
           }
         }
     ]
     });
+    // $('.center').slick('slickGoTo', 0);
   }
 
+  
 }

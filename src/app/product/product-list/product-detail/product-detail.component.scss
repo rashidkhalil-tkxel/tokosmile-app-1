@@ -10,11 +10,37 @@
   background-color: #4bb197;
 }
 .total-price-text{
-    font-size: 10px; color:#9f9f9f
+    font-size: 10px !important; color:#9f9f9f !important
 }
 .total-price{
-    color: #1fb397; font-size: 20px;
+    color: #1fb397 !important; font-size: 20px !important;
 }
 .buy-now{
     border: 1px solid gray; font-size:12px
+}
+
+.pad-l{
+padding-left: 8px !important;
+}
+
+.btn { 
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x) !important;
+}
+.pl-5{
+padding-left: 5px;
+}
+.bottom_nav_container nav .nav-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--secondary-color);
+  padding: 12px 16px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.bottom_nav_container nav .nav-item span {
+  width: 100%;
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--secondary-color);
 }

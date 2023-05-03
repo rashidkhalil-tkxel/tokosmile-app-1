@@ -346,6 +346,9 @@ ul {
 .nav__active .header .hambergur i {
   color: var(--secondary-color) !important;
 }
+.active-page{
+  color: #0AA699 !important;
+}
 .nav__active .header .navbar-nav .nav-item a {
   color: var(--secondary-color) !important;
 }
