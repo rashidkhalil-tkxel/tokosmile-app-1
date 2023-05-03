@@ -149,9 +149,9 @@ a:focus {
     display: flex;
   }
 }
-.bottom_nav_container nav {
+/* .bottom_nav_container nav {
   display: flex;
-}
+} */
 
 /*====================
  Mobile Responsive Menu
@@ -444,8 +444,8 @@ a.xp-btn {
 .slider_2,
 .slider_3 {
   position: relative;
-  height: 350px;
-  /* height: 500px; */
+  /* height: 350px; */
+  height: 500px;
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -997,4 +997,8 @@ p {
  
   .d-none{
     display: none;
+  }
+
+  html {
+    scroll-behavior: auto !important;
   }

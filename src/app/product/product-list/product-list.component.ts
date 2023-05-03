@@ -10,13 +10,14 @@ export class ProductListComponent implements OnInit {
 
   version:string = '';
   constructor() {
+    document.body.scrollTop = 0;
    this.version = localStorage.getItem("version") as string;
     AOS.init({
       once: true,
     });
     $(function(){
-      $('.carousel').carousel({ interval: 2000,   autoplay: false,  pause: "hover"});
-      $('.carousel').carousel(0);
+      $('.carousel').carousel({ interval: 2000,   autoplay: false, });
+      // $('.carousel').carousel(0);
       // $('.carousel').carousel('pause'); 
   }); 
    }
